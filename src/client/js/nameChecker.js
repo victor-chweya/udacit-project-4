@@ -6,6 +6,6 @@ function checkForName(inputText) {
     }
     return true;
 
-}
+};
 
-export { checkForName }
+export { checkForName };
