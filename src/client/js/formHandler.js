@@ -9,7 +9,10 @@ function handleSubmit(event) {
     Client.postData('http://localhost:8081/api', {text: formText})
     .then(function(res) {
         
-        document.getElementById("results").innerHTML = `Agreement: ${res.agreement}`;
+        document.getElementById("agreement").innerHTML = `Agreement: ${res.agreement}`;
+        document.getElementById("subjectivity").innerHTML = `Subjectivity: ${res.subjectivity}`;
+        document.getElementById("confidence").innerHTML = `Confidence: ${res.confidence}`;
+        document.getElementById("irony").innerHTML = `Irony: ${res.irony}`;
         
     })
     
